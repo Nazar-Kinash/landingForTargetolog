@@ -1,0 +1,52 @@
+.MainPageWrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  // display: flex;
+  // align-items: center;
+  .ContentContainer {
+    padding: 40px;
+    color: #fff;
+    position: absolute;
+    // height: 50%;
+    width: 50%;
+    text-align: left;
+    left: 0;
+    top: 50%;
+    transform: translateY(-34%);
+    z-index: 1;
+    // margin: 60px;
+    background-color: rgba(46, 39, 39, 0.85);
+    h2,
+    h4 {
+      font-size: 74px;
+      font-weight: 100;
+    }
+    p {
+      padding-top: 25px;
+      font-size: 32px;
+      width: 60%;
+      font-family: "Cinzel", serif;
+    }
+    button {
+      margin-top: 36px;
+      font-size: 20px;
+      padding: 15px 40px;
+      background-color: rgb(177, 48, 48);
+      color: #fff;
+      border: 3px solid #000;
+      border-radius: 50px;
+    }
+  }
+  .ImageContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../../images/main-background-image.jpg);
+    width: 60%;
+    height: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,68 @@
+.ComponentWrapper {
+  width: 85%;
+  margin: 0 auto;
+  background-color: rgba(28, 33, 41, 0.87);
+
+  .ItemList {
+    width: 85%;
+    margin: 0 auto;
+    .Item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 200px;
+      justify-content: center;
+      .ItemLine {
+        .ItemDot {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: green;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+        height: 100%;
+
+        &::after,
+        &::before {
+          display: block;
+          content: "";
+          width: 10px;
+          height: 50%;
+          background-color: green;
+        }
+      }
+      .ItemText {
+        width: 35%;
+      }
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+
+      &:first-child {
+        .ItemLine {
+          justify-content: flex-end;
+          &::before {
+            display: none;
+          }
+        }
+      }
+      &:last-child {
+        .ItemLine {
+          justify-content: flex-start;
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
