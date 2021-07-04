@@ -1,5 +1,6 @@
 import { useFormik } from "formik";
 import React from "react";
+import { Instagram, Telegram, Linkedin } from "../../images/icons";
 
 import styles from "./contactsComponents.module.scss";
 
@@ -11,19 +12,29 @@ const ContactsComponents = () => {
       message: "",
     },
   });
-  const contactList = [];
+
   return (
     <div className={styles.ComponentWrapper}>
       <div className={styles.InfoContainer}>
         <h3>Мої контакти</h3>
         <div className={styles.ContactList}>
-          {!!contactList.length &&
-            contactList.map((el, i) => (
-              <a href={el.link}>
-                <el.icon />
-                <p>{el.text}</p>
-              </a>
-            ))}
+          <a href=''>
+            <label htmlFor=''>Телефон</label> <p>{"+38 (050)882-96-03"}</p>
+          </a>
+          <a href=''>
+            <label htmlFor=''>E-mail</label> <p>{"stecikh@gmail.com"}</p>
+          </a>
+          <div className={styles.SocialIconsContainer}>
+            <a href=''>
+              <Instagram />
+            </a>
+            <a href=''>
+              <Telegram />
+            </a>
+            <a href=''>
+              <Linkedin />
+            </a>
+          </div>
         </div>
       </div>
       <div className={styles.ContactFormWrapper}>
