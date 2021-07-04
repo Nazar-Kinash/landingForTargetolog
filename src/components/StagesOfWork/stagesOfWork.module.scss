@@ -1,5 +1,15 @@
 .ComponentWrapper {
+  margin-top: 90px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  h3 {
+    background-color: rgba(41, 44, 45, 0.96);
+    width: 85%;
+    color: green;
+    font-size: 62px;
+    font-weight: 400;
+    padding: 18px 0;
+  }
 }

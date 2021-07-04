@@ -2,6 +2,13 @@
   width: 85%;
   margin: 0 auto;
   background-color: rgba(28, 33, 41, 0.87);
+  .Title {
+    color: #e32b2b;
+    font-size: 36px;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
 
   .ItemList {
     width: 85%;
@@ -10,7 +17,7 @@
       width: 100%;
       display: flex;
       align-items: center;
-      height: 200px;
+      height: 80px;
       justify-content: center;
       .ItemLine {
         .ItemDot {
@@ -34,17 +41,24 @@
         &::before {
           display: block;
           content: "";
-          width: 10px;
+          width: 3px;
           height: 50%;
           background-color: green;
         }
       }
       .ItemText {
-        width: 35%;
+        width: 50%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        text-align: left;
+        color: white;
       }
 
       &:nth-child(2n) {
         flex-direction: row-reverse;
+        .ItemText {
+          text-align: right;
+        }
       }
 
       &:first-child {

@@ -1,0 +1,66 @@
+.ComponentWrapper {
+  width: 100%;
+  display: flex;
+  h3 {
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+    &::after {
+      display: block;
+      content: "";
+      width: 20%;
+      height: 10px;
+      margin-top: 10px;
+      background-color: indianred;
+    }
+  }
+  .InfoContainer {
+    box-sizing: border-box;
+    padding: 40px;
+    width: 50%;
+    background-color: rgb(30, 46, 71);
+    h3 {
+      color: #fff;
+    }
+  }
+  .ContactFormWrapper {
+    font-family: "M PLUS 1p", sans-serif;
+    width: 50%;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: rgb(127, 145, 169);
+    h3 {
+      color: #1e2e47;
+    }
+    .ContactForm {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .FormLabel {
+        padding: 20px 0px 0px;
+        letter-spacing: 1px;
+        font-size: 14px;
+      }
+      .FormInput {
+        box-sizing: border-box;
+        width: 100%;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+      }
+      .FormButton {
+        margin-top: 20px;
+        border-radius: 8px;
+        padding: 9px 45px;
+        border: none;
+        box-shadow: 6px 5px 8px 3px #000;
+        background-color: red;
+        color: white;
+      }
+    }
+  }
+}

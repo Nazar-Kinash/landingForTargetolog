@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./stageComponent.module.scss";
 
 const StageComponent = ({ items, title }) => {
   return (
     <div className={styles.ComponentWrapper}>
-      <h4>{title}</h4>
+      <h4 className={styles.Title}>{title}</h4>
       <div className={styles.ItemList}>
         {items.map((el, i) => (
           <div className={styles.Item} key={"item" + i}>
@@ -13,10 +13,7 @@ const StageComponent = ({ items, title }) => {
               <div className={styles.ItemDot}></div>
             </div>
             <div className={styles.ItemText}>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fuga debitis officiis molestias
-                doloribus? Accusamus ea asperiores doloribus beatae suscipit.
-              </p>
+              <p>{el.text}</p>
             </div>
           </div>
         ))}
