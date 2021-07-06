@@ -1,4 +1,5 @@
 import "./App.scss";
+import AnswerAndQuestion from "./components/AnswerAndQuestion";
 import BenefitsComponent from "./components/BenefitsComponent";
 import ContactsComponent from "./components/ContactsComponent";
 import Header from "./components/Header";
@@ -14,6 +15,7 @@ function App() {
       <BenefitsComponent />
       <StagesOfWork />
       <ServicesComponent />
+      <AnswerAndQuestion />
       <ContactsComponent />
     </div>
   );
