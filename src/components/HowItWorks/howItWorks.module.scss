@@ -1,0 +1,58 @@
+.ComponentWrapper {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 100px;
+  h2 {
+    padding: 30px 0;
+    margin-bottom: 20px;
+    font-size: 38px;
+    color: white;
+    background-color: rgba(28, 33, 41, 0.87);
+    box-shadow: 2px 2px 22px -3px #b6752f;
+  }
+
+  .ComponentMainContent {
+    background-color: rgba(28, 33, 41, 0.87);
+    box-shadow: 2px 2px 22px -3px #b6752f;
+    padding: 20px 30px;
+
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+
+    .ComponentListItem {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      .IconContainer {
+        margin-right: 20px;
+        width: 80px;
+        height: 80px;
+        svg {
+          width: 80px;
+          height: 80px;
+          path {
+            fill: rgb(28, 98, 28);
+          }
+        }
+      }
+      .TextContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: white;
+        h5 {
+          color: #e32b2b;
+          font-size: 28px;
+          text-align: left;
+        }
+        p {
+          margin-top: 20px;
+          font-size: 20px;
+          text-align: left;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}

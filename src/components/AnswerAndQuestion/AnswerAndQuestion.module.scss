@@ -28,6 +28,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        .IconButton {
+          padding: 0;
+          span {
+            svg {
+              width: 40px;
+              height: 40px;
+              path {
+                fill: white;
+              }
+            }
+          }
+        }
       }
       .Answer {
         margin-top: 20px;
