@@ -1,7 +1,8 @@
 .ComponentWrapper {
   width: 85%;
   color: white;
-  background-color: rgba(0, 0, 0, 0.83);
+  background-color: rgba(28, 33, 41, 0.87);
+  box-shadow: 2px 2px 22px -3px #b6752f;
   box-sizing: border-box;
   padding: 50px;
   margin: 100px auto 0;
@@ -20,10 +21,12 @@
       div {
         display: flex;
         align-items: center;
-        padding: 30px 10px 5px 0;
+        padding: 20px 10px 5px 0;
         span {
-          width: 40px;
-          height: 40px;
+          display: flex;
+          padding: 20px 28px;
+          align-items: center;
+          justify-content: center;
           // padding: 20px;
           font-weight: 600;
           font-size: 30px;
@@ -43,10 +46,13 @@
           display: flex;
           flex-direction: column;
           align-items: flex-start;
+          text-align-last: left;
           h4 {
             font-size: 28px;
+            font-weight: 200;
           }
           p {
+            margin-top: 10px;
             width: 90%;
             text-align: left;
             font-weight: 100;
@@ -55,9 +61,44 @@
       }
     }
     .ImageContainer {
+      padding-top: 30px;
+      position: relative;
       img {
-        width: 305px;
-        height: 457px;
+        position: sticky;
+        top: 40px;
+        width: 489px;
+        height: 374px;
+        object-fit: contain;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 40px auto 0;
+    h3 {
+      font-size: 32px;
+      padding: 10px;
+    }
+    .ContentWrapper {
+      margin-top: 0;
+      flex-direction: column-reverse;
+      .TextContainer {
+        div {
+          padding: 10px 0 0;
+          span {
+            padding: 7px 16px;
+          }
+          div {
+            text-align: left;
+            h4 {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+      .ImageContainer {
+        display: none;
       }
     }
   }

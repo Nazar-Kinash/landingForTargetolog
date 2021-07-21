@@ -6,6 +6,7 @@
     padding: 30px 0;
     margin-bottom: 20px;
     font-size: 38px;
+    font-weight: 300;
     color: white;
     background-color: rgba(28, 33, 41, 0.87);
     box-shadow: 2px 2px 22px -3px #b6752f;
@@ -14,7 +15,7 @@
   .ComponentMainContent {
     background-color: rgba(28, 33, 41, 0.87);
     box-shadow: 2px 2px 22px -3px #b6752f;
-    padding: 20px 30px;
+    padding: 60px 30px;
 
     display: grid;
     grid-template-columns: 49% 49%;
@@ -45,12 +46,61 @@
           color: #e32b2b;
           font-size: 28px;
           text-align: left;
+          font-weight: 100;
         }
         p {
           margin-top: 20px;
           font-size: 20px;
           text-align: left;
           font-weight: 100;
+        }
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-top: 40px;
+    h2 {
+      padding: 10px 10px;
+      margin-bottom: 10px;
+      font-size: 28px;
+      font-weight: 300;
+      color: white;
+    }
+    .ComponentMainContent {
+      padding: 20px 10px;
+
+      display: grid;
+      grid-template-columns: 100%;
+      gap: 20px;
+
+      .ComponentListItem {
+        .IconContainer {
+          margin-right: 10px;
+          width: 40px;
+          height: 40px;
+          svg {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .TextContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          color: white;
+          h5 {
+            color: #e32b2b;
+            font-size: 28px;
+            text-align: left;
+            font-weight: 100;
+          }
+          p {
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: left;
+            font-weight: 100;
+          }
         }
       }
     }

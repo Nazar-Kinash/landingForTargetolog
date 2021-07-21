@@ -1,5 +1,5 @@
 import React from "react";
-import componentImage from "../../images/benefit-component-image.jpg";
+import componentImage from "../../images/benefit-image.jpg";
 import { Support24HoursIcon, Instagram, CoinIcon, WritingIcon, TrophyIcon, ChecklistIcon } from "../../images/icons";
 
 import styles from "./benefitsComponent.module.scss";
@@ -14,28 +14,32 @@ const BenefitsComponent = () => {
     {
       icon: Instagram,
       title: "Безкоштовний аудит сторінки",
-
       text: "Aналізую вашу посадкову сторінку та даю рекомендації для її вдосконалення",
     },
     {
       icon: WritingIcon,
-      title: "",
-
-      text: "Тестовий період (7 днів) проводжу безкоштовно, якщо не приводжу клієнтів у Ваш бізнес",
+      title: "Тестовий період (7 днів)",
+      text: "Проводжу БЕЗКОШТОВНО, якщо не приведу клієнтів у Ваш бізнес",
     },
-    { icon: TrophyIcon, text: "Орієнтуюсь не на ціну заявки, а на результат - замовлення" },
+
     {
       icon: CoinIcon,
       title: "Ви платите дешевше",
-
       text: "Cобівартість моєї роботи нижча порівняно з агенством за рахунок відсутності орендної плати за офіс (так як працюю дистанційно)",
     },
-    { icon: ChecklistIcon, title: "", text: "Створюю продаючі скрипти для обробки лідів під Ваш бізнес." },
-    { icon: ChecklistIcon, title: "", text: "Зацікавлкна в результаті кожного мого клієнта" },
+    {
+      icon: ChecklistIcon,
+      title: "Індивідуальний підхід",
+      text: "Окрім написання рекламної стратегії, створюю продаючі скрипти для обробки лідів під Ваш бізнес.",
+    },
+    {
+      icon: ChecklistIcon,
+      title: "Зацікавлена у довгостроковій співпраці",
+      text: "Для продовження співпраці з клієнтом готова показувати максимальні результати",
+    },
     {
       icon: Support24HoursIcon,
       title: "На зв’язку з Вами 24/7 ",
-
       text: "Bідповідаю на Ваші запитання в будь який період доби.",
     },
   ];

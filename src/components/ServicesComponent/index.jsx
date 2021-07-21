@@ -4,15 +4,17 @@ import styles from "./servicesComponent.module.scss";
 
 const ServicesComponent = () => {
   return (
-    <div className={styles.ComponentWrapper}>
+    <div id='services' className={styles.ComponentWrapper}>
       <h2>Послуги</h2>
       <div className={styles.ContentContainer}>
         <div className={`${styles.ItemWrapper} ${styles.Service3}`}>
           <h3>Особиста консультація</h3>
           <ul>
-            <li> Брифінг для виявлення основних проблем і питань</li>
-            <li>аналіз запитів і підбір шляхів вирішення</li>
-            <li>дзвінок на платформі Zoom 1,5-2 год</li>
+            <li>Аудит профілю </li>
+            <li>Розбір попередніх рекламних кампаній</li>
+            <li>Розробка стратегії запуску реклами</li>
+            <li>Аналіз запитів і підбір шляхів вирішення</li>
+            <li>Дзвінок на платформі Zoom 1,5-2 год</li>
           </ul>
           <p>Вартість: 35$</p>
           <button>Замовити</button>
@@ -28,6 +30,7 @@ const ServicesComponent = () => {
             <li>Підготовка креативів і оферів</li>
             <li>Запуск РК</li>
             <li>Оптимізація, пониження вартості кліку</li>
+            <li>Звітність</li>
           </ul>
           <p>Вартість: 80$</p>
           <button>Замовити</button>
@@ -43,6 +46,7 @@ const ServicesComponent = () => {
             <li>Підготовка креативів і оферів</li>
             <li>Запуск РК</li>
             <li>Оптимізація, пониження вартості кліку</li>
+            <li>Звітність</li>
           </ul>
           <p>Вартість: 150$</p>
           <button>Замовити</button>

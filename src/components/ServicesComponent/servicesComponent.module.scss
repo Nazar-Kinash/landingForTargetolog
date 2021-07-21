@@ -31,6 +31,11 @@
       ul {
         padding-left: 20px;
         color: #bfccd2;
+        li {
+          &::marker {
+            color: red;
+          }
+        }
       }
       p {
         color: white;
@@ -44,6 +49,8 @@
         border-radius: 40px;
         color: white;
         margin-top: 20px;
+        font-size: 18px;
+        width: 100%;
         &:hover {
           background-color: transparent;
         }
@@ -72,5 +79,14 @@
   .Service3 {
     background-image: url(../../images/service_3.jpg);
     background-position: 0 50%;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    .ContentContainer {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
   }
 }

@@ -84,4 +84,16 @@
       }
     }
   }
+  @media (max-width: 480px) {
+    width: 100%;
+    .ItemList {
+      width: 100%;
+      .Item {
+        height: 116px;
+        .ItemText {
+          word-break: break-word;
+        }
+      }
+    }
+  }
 }

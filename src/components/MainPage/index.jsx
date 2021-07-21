@@ -4,12 +4,13 @@ import styles from "./mainPage.module.scss";
 
 const MainPage = () => {
   return (
-    <div className={styles.MainPageWrapper}>
+    <div id={"mainPage"} className={styles.MainPageWrapper}>
       <div className={styles.ContentContainer}>
         <h4>Таргетолог</h4>
         <h2>Христина Стецик</h2>
         <p>Налаштування таргетованої реклами в Instagram & Facebook</p>
-        <button>Обговорити проект</button>
+        {/* <span>Генерую потік клієнтів із соцмереж та збільшую прибуток Вашого бізнесу</span> */}
+        <a href='tg://resolve?domain=krystyna_stetsyk'>Обговорити проект</a>
       </div>
       <div className={styles.ImageContainer}></div>
     </div>

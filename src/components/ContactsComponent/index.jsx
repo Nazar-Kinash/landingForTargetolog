@@ -11,19 +11,22 @@ const ContactsComponents = () => {
       phone: "",
       message: "",
     },
+    onSubmit: (values) => console.log(values),
   });
 
   return (
-    <div className={styles.ComponentWrapper}>
+    <div id={"contacts"} className={styles.ComponentWrapper}>
       <div className={styles.InfoContainer}>
         <h3>Мої контакти</h3>
-        <div className={styles.ContactList}>
-          <a href=''>
-            <label htmlFor=''>Телефон</label> <p>{"+38 (050)882-96-03"}</p>
-          </a>
-          <a href=''>
-            <label htmlFor=''>E-mail</label> <p>{"stecikh@gmail.com"}</p>
-          </a>
+        <div className={styles.ContactsWrapper}>
+          <div className={styles.ContactList}>
+            <a href='tel:+380508829603'>
+              <label htmlFor=''>Телефон</label> <p>{"+38 (050)882-96-03"}</p>
+            </a>
+            <a href='mailto:stecikh@gmail.com'>
+              <label htmlFor=''>E-mail</label> <p>{"stecikh@gmail.com"}</p>
+            </a>
+          </div>
           <div className={styles.SocialIconsContainer}>
             <a href='https://www.instagram.com/krystyna_stetsyk/'>
               <Instagram />
@@ -37,26 +40,44 @@ const ContactsComponents = () => {
           </div>
         </div>
       </div>
-      <div className={styles.ContactFormWrapper}>
+      {/* <div className={styles.ContactFormWrapper}>
         <h3>Залишити контакт</h3>
-        <form className={styles.ContactForm}>
+        <form className={styles.ContactForm} onSubmit={formik.handleSubmit}>
           <label className={styles.FormLabel} htmlFor='name'>
             Ваше ім'я
           </label>
-          <input className={styles.FormInput} name='name' type='text' />
+          <input
+            className={styles.FormInput}
+            value={formik.values.name}
+            onChange={formik.handleChange}
+            name='name'
+            type='text'
+          />
           <label className={styles.FormLabel} htmlFor='phone'>
             {"Контактний телефон*"}
           </label>
-          <input className={styles.FormInput} name='phone' type='text' />
+          <input
+            className={styles.FormInput}
+            value={formik.values.phone}
+            onChange={formik.handleChange}
+            name='phone'
+            type='text'
+          />
           <label className={styles.FormLabel} htmlFor='message'>
             Ваше запитання
           </label>
-          <textarea className={styles.FormInput} name='message' id='' rows='4'></textarea>
+          <textarea
+            className={styles.FormInput}
+            value={formik.values.message}
+            onChange={formik.handleChange}
+            name='message'
+            id=''
+            rows='4'></textarea>
           <button className={styles.FormButton} type='submit'>
             Відправити
           </button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };

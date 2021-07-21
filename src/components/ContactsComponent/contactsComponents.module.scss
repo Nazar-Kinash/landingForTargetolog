@@ -19,45 +19,49 @@
   .InfoContainer {
     box-sizing: border-box;
     padding: 40px;
-    width: 50%;
+    width: 100%;
     background-color: rgb(30, 46, 71);
     h3 {
       color: #fff;
     }
-    .ContactList {
+    .ContactsWrapper {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 40px;
-      a {
-        text-decoration: none;
-        padding: 12px;
-        width: 100%;
-        color: #fff;
-        font-size: 26px;
-        font-weight: 100;
-        text-align: left;
+      justify-content: space-between;
+      .ContactList {
         display: flex;
-        justify-content: flex-start;
-        label {
-          margin-right: 40px;
-          font-weight: 400;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          padding: 12px;
+          width: 100%;
+          color: #fff;
+          font-size: 26px;
+          font-weight: 100;
+          text-align: left;
+          display: flex;
+          justify-content: flex-start;
+          label {
+            margin-right: 40px;
+            font-weight: 400;
+          }
         }
-      }
-      & > * {
-        display: flex;
+        & > * {
+          display: flex;
+        }
       }
       .SocialIconsContainer {
         display: flex;
-        margin-top: 15px;
-        width: 100%;
-        justify-content: flex-start;
+
+        justify-content: flex-end;
         a {
           width: max-content;
+          margin-left: 20px;
         }
         svg {
-          width: 50px;
-          height: 50px;
+          width: 70px;
+          height: 70px;
         }
       }
     }
@@ -98,6 +102,37 @@
         box-shadow: 6px 5px 8px 3px #000;
         background-color: red;
         color: white;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    h3 {
+      font-size: 28px;
+
+      &::after {
+        height: 5px;
+        margin-top: 8px;
+      }
+    }
+    .InfoContainer {
+      box-sizing: border-box;
+      padding: 20px 10px;
+      width: 100%;
+      .ContactsWrapper {
+        flex-direction: column;
+        .SocialIconsContainer {
+          margin-top: 20px;
+          width: 100%;
+          justify-content: flex-start;
+          // a {
+          //   margin-left: 0px;
+          // }
+          svg {
+            width: 70px;
+            height: 70px;
+          }
+        }
       }
     }
   }

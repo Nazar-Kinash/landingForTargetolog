@@ -1,9 +1,10 @@
 .ComponentWrapper {
-  margin-top: 90px;
+  margin-top: 100px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h3 {
     width: 85%;
 
@@ -13,5 +14,11 @@
     color: white;
     background-color: rgba(28, 33, 41, 0.87);
     box-shadow: 2px 2px 22px -3px #b6752f;
+  }
+  @media (max-width: 480px) {
+    margin-top: 40px;
+    h3 {
+      width: 100%;
+    }
   }
 }
