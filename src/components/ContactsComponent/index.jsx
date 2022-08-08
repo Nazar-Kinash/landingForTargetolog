@@ -1,18 +1,18 @@
-import { useFormik } from "formik";
+// import { useFormik } from "formik";
 import React from "react";
 import { Instagram, Telegram, Linkedin } from "../../images/icons";
 
 import styles from "./contactsComponents.module.scss";
 
 const ContactsComponents = () => {
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      phone: "",
-      message: "",
-    },
-    onSubmit: (values) => console.log(values),
-  });
+  // const formik = useFormik({
+  //   initialValues: {
+  //     name: "",
+  //     phone: "",
+  //     message: "",
+  //   },
+  //   onSubmit: (values) => console.log(values),
+  // });
 
   return (
     <div id={"contacts"} className={styles.ComponentWrapper}>

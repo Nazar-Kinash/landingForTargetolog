@@ -1,6 +1,6 @@
 import React from "react";
 import componentImage from "../../images/benefit-image.jpg";
-import { Support24HoursIcon, Instagram, CoinIcon, WritingIcon, TrophyIcon, ChecklistIcon } from "../../images/icons";
+import { Support24HoursIcon, Instagram, CoinIcon, ChecklistIcon } from "../../images/icons";
 
 import styles from "./benefitsComponent.module.scss";
 

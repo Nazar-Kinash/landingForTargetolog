@@ -1,5 +1,4 @@
 import React from "react";
-import photo from "../../images/photo.png";
 import styles from "./mainPage.module.scss";
 
 const MainPage = () => {

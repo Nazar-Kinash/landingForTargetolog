@@ -1,4 +1,3 @@
-import { Button } from "@material-ui/core";
 import FormData from "form-data";
 import axios from "axios";
 import React from "react";
@@ -9,7 +8,6 @@ const Banner = () => {
   const formData = new FormData();
   formData.append("phone", "380999999999");
 
-  const data = JSON.stringify({ phone: "sdsdgsg" });
   const sendREquest = async () => {
     const addedClient = await axios.post("http://localhost:3001/clients/add_client", formData);
     console.log(addedClient);
