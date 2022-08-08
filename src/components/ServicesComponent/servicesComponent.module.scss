@@ -37,19 +37,21 @@
           }
         }
       }
-      p {
-        color: white;
-        font-size: 18px;
-      }
-      button {
-        padding: 10px 40px;
-        border: 2px solid green;
 
+      a {
+        // padding: 10px 40px;
+        border: 2px solid green;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         background-color: rgba(0, 250, 0, 0.2);
         border-radius: 40px;
         color: white;
         margin-top: 20px;
         font-size: 18px;
+        text-align: center;
+        height: 40px;
         width: 100%;
         &:hover {
           background-color: transparent;
@@ -58,6 +60,10 @@
           background-color: rgba(221, 5, 5, 0.388);
           border-color: rgb(221, 5, 5);
         }
+      }
+      .Bonus {
+        color: #bfccd2;
+        font-size: 16px;
       }
     }
   }
